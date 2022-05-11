@@ -6,7 +6,11 @@
 
     <groupId>org.example</groupId>
     <artifactId>spring_05_di-set</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>spring_07_di-autoware</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
