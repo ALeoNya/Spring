@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/spring_06_di-constructor/06.iml" filepath="$PROJECT_DIR$/spring_06_di-constructor/06.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_05_di-set/spring_05_di-set.iml" filepath="$PROJECT_DIR$/spring_05_di-set/spring_05_di-set.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_07_di-autoware/spring_07_di-autoware.iml" filepath="$PROJECT_DIR$/spring_07_di-autoware/spring_07_di-autoware.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_08_di_collection/spring_08_di_collection.iml" filepath="$PROJECT_DIR$/spring_08_di_collection/spring_08_di_collection.iml" />
     </modules>
   </component>
 </project>
