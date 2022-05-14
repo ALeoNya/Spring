@@ -9,6 +9,9 @@
         <option value="$PROJECT_DIR$/06/pom.xml" />
         <option value="$PROJECT_DIR$/spring_07_di-autoware/pom.xml" />
         <option value="$PROJECT_DIR$/spring_08_di_collection/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_09_datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_10_annotation_bean/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_12_annotation_bean_manager/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

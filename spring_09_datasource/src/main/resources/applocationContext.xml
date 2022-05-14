@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd
+       ">
+
+<!--1开启context命名空间-->
+        <context:property-placeholder location="jdbc.properties"/>
+<!--        2使用占位符${}读取properties文件中的属性-->
+        <bean  class="com.alibaba.druid.pool.DruidDataSource">
+                <property name="driverClassName" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.url}"/>
+        </bean>
+        <bean id="bookDao" class="com.dao.impl.BookDaoImpl">
+                <property name="name" value="${jdbc.username}"/>
+        </bean>
+
+
+</beans>
