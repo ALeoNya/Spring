@@ -12,11 +12,13 @@
         <option value="$PROJECT_DIR$/spring_09_datasource/pom.xml" />
         <option value="$PROJECT_DIR$/spring_10_annotation_bean/pom.xml" />
         <option value="$PROJECT_DIR$/spring_12_annotation_bean_manager/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_18_aop_quickstatr/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/spring_05_di-set/spring_07_di-autoware/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_12_annotation_bean_manager/spring_18_aop_quickstart/pom.xml" />
       </set>
     </option>
   </component>

@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring_09_datasource/spring_09_datasource.iml" filepath="$PROJECT_DIR$/spring_09_datasource/spring_09_datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_10_annotation_bean/spring_10_annotation_bean.iml" filepath="$PROJECT_DIR$/spring_10_annotation_bean/spring_10_annotation_bean.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_12_annotation_bean_manager/spring_12_annotation_bean_manager.iml" filepath="$PROJECT_DIR$/spring_12_annotation_bean_manager/spring_12_annotation_bean_manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_18_aop_quickstatr/spring_18_aop_quickstatr.iml" filepath="$PROJECT_DIR$/spring_18_aop_quickstatr/spring_18_aop_quickstatr.iml" />
     </modules>
   </component>
 </project>
