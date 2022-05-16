@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/spring_10_annotation_bean/pom.xml" />
         <option value="$PROJECT_DIR$/spring_12_annotation_bean_manager/pom.xml" />
         <option value="$PROJECT_DIR$/spring_18_aop_quickstatr/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_20_aop_advice_type/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
