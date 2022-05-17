@@ -21,7 +21,7 @@
                 <property name="username" value="${jdbc.username}"/>
                 <property name="password" value="${jdbc.url}"/>
         </bean>
-        <bean id="bookDao" class="com.dao.impl.BookDaoImpl">
+        <bean id="bookDao" class="com.dao.impl.AccountDao">
                 <property name="name" value="${jdbc.username}"/>
         </bean>
 

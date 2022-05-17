@@ -1,4 +1,4 @@
-package com.dao.config;
+package com.config;
 
 
 import org.springframework.context.annotation.ComponentScan;

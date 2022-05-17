@@ -14,7 +14,7 @@ public class BookDaoImpl implements BookDao {
         System.out.println("book dao update");
     }
 
-    public int select()
+    public int select( )
     {
         System.out.println("book dao select");
         return 100;
