@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring_09_datasource/spring_09_datasource.iml" filepath="$PROJECT_DIR$/spring_09_datasource/spring_09_datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_10_annotation_bean/spring_10_annotation_bean.iml" filepath="$PROJECT_DIR$/spring_10_annotation_bean/spring_10_annotation_bean.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_12_annotation_bean_manager/spring_12_annotation_bean_manager.iml" filepath="$PROJECT_DIR$/spring_12_annotation_bean_manager/spring_12_annotation_bean_manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_15_Mybatis/spring_15_Mybatis.iml" filepath="$PROJECT_DIR$/spring_15_Mybatis/spring_15_Mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_18_aop_quickstatr/spring_18_aop_quickstatr.iml" filepath="$PROJECT_DIR$/spring_18_aop_quickstatr/spring_18_aop_quickstatr.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_20_aop_advice_type/spring_20_aop_advice_type.iml" filepath="$PROJECT_DIR$/spring_20_aop_advice_type/spring_20_aop_advice_type.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_21_case_interface_run_speed/spring_21_case_interface_run_speed.iml" filepath="$PROJECT_DIR$/spring_21_case_interface_run_speed/spring_21_case_interface_run_speed.iml" />

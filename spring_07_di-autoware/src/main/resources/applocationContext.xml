@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="bookDao" class="com.dao.impl.AccountDao">
+    <bean id="bookDao" class="com.dao.impl.BookDaoImpl">
         <constructor-arg index="0" value="1000"/>
         <constructor-arg index="1" value="mysql"/>
     </bean>
