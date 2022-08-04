@@ -69,9 +69,31 @@ public class PayrollDemo {
 
             MybatisUtils.closeSession(sqlSession);
         }
+    }
 
+//    @Test //2.1满血工具类版本
+//    public void updatePayrollBy_eid() {
+//        SqlSession sqlSession = null;
+//        sqlSession = MybatisUtils.openSession();
+//        payrollDao = sqlSession.getMapper(PayrollDao.class);
+//
+//        List<Payroll> payrolls = payrollDao.updatePayrollBy_eid("e04");
+//        System.out.println(payrolls.toString());
+//    }
 
+    @Test //多表删除
+    public void deletePayrollBy_eid() {
+        SqlSession sqlSession = null;
+        sqlSession = MybatisUtils.openSession();
+        payrollDao = sqlSession.getMapper(PayrollDao.class);
 
-
+        System.out.println("1");
+        payrollDao.deletePayrollBy_jid("j03");
+        System.out.println("2");
+        sqlSession.commit();
+         /**
+         * 删除后面要提交事务才能执行
+         * */
+        MybatisUtils.closeSession(sqlSession);
     }
 }

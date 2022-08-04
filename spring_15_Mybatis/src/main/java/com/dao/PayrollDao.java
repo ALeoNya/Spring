@@ -1,10 +1,7 @@
 package com.dao;
 
 import com.pojo.Payroll;
-import org.apache.ibatis.annotations.One;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.mapping.FetchType;
 
 import java.util.List;
@@ -31,4 +28,17 @@ public interface PayrollDao {
 
     @Select("select * from payroll where eid = #{eid}")
     List<Payroll> findPayrollBy_eid(String eid);
+
+//    @Update("UPDATE payroll SET eid = 'un' where eid = #{eid}")
+//    List<Payroll> updatePayrollBy_eid(String eid);
+
+    @Delete("DELETE payroll,profession FROM payroll LEFT JOIN profession ON payroll.jid = profession.jid WHERE payroll.jid = #{jid}")
+    void deletePayrollBy_jid(String jid);
+
+
+
+//    USE company;
+//    DELETE payroll,profession FROM payroll
+//    LEFT JOIN profession ON payroll.jid = profession.jid
+//    WHERE payroll.jid = 'j04'
 }

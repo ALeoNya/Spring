@@ -65,5 +65,11 @@ public class EmployeDemo {
         System.out.println(employe.toString());
     }
 
+    @Test
+    public void deleteEmployeBy_eid() {
+        Employe employe = employeDao.deleteEmployeBy_eid("e04");
+        System.out.println(employe.toString());
+    }
+
 
 }

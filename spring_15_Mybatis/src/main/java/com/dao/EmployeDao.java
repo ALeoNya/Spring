@@ -1,10 +1,7 @@
 package com.dao;
 
 import com.pojo.Employe;
-import org.apache.ibatis.annotations.Many;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.mapping.FetchType;
 
 import java.util.List;
@@ -31,4 +28,6 @@ public interface EmployeDao {
     @Select("select * from employe where name = #{name}")
     Employe findEmployeBy_name(String name);
 
+    @Delete("delete from employe where eid = #{eid}")
+    Employe deleteEmployeBy_eid(String eid);
 }
