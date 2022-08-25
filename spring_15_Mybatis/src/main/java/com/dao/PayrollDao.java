@@ -12,10 +12,10 @@ public interface PayrollDao {
     @Results(id = "payrollMap",value = {
             @Result(id = true,column = "eid",property = "eid"),
             /*
-            * id = true为true表示该属性为主键
+             *id = true为true表示该属性为主键
              * column为数据库中对应的的字段名
              * property对应的是数据实体类的名字
-            * */
+            */
             @Result(column = "jid",property = "jid"),
             @Result(column = "salary",property = "salary"),
             @Result(column = "eid",property = "employe",one=@One(select = "com.dao.EmployeDao.findEmployeBy_eid",fetchType = FetchType.EAGER))
@@ -26,14 +26,21 @@ public interface PayrollDao {
     })
     List<Payroll> findAll();
 
+    /**/
     @Select("select * from payroll where eid = #{eid}")
     List<Payroll> findPayrollBy_eid(String eid);
 
-//    @Update("UPDATE payroll SET eid = 'un' where eid = #{eid}")
-//    List<Payroll> updatePayrollBy_eid(String eid);
-
+    /*删除payroll表和profession表中指定jid的数据*/
     @Delete("DELETE payroll,profession FROM payroll LEFT JOIN profession ON payroll.jid = profession.jid WHERE payroll.jid = #{jid}")
     void deletePayrollBy_jid(String jid);
+
+    /*
+    * 三表删除*/
+    @Delete("DELETE payroll,profession,employe FROM payroll " +
+            "LEFT JOIN profession ON payroll.jid = profession.jid " +
+            "LEFT JOIN employe ON payroll.eid = employe.eid " +
+            "WHERE payroll.jid = #{jid} AND  .eid = #{eid}")
+    void deletePayrollBy_jideid(@Param("jid") String jid,@Param("eid") String eid);
 
 
 
@@ -41,4 +48,9 @@ public interface PayrollDao {
 //    DELETE payroll,profession FROM payroll
 //    LEFT JOIN profession ON payroll.jid = profession.jid
 //    WHERE payroll.jid = 'j04'
+
+//    DELETE payroll,profession,employe FROM payroll
+//    LEFT JOIN profession ON payroll.jid = profession.jid
+//    LEFT JOIN employe ON payroll.eid = employe.eid
+//    WHERE payroll.jid = 'j04' AND payroll.eid = 'e04'
 }

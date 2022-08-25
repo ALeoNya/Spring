@@ -81,18 +81,30 @@ public class PayrollDemo {
 //        System.out.println(payrolls.toString());
 //    }
 
-    @Test //多表删除
-    public void deletePayrollBy_eid() {
+    @Test //profession和payroll表删除
+    public void deletePayrollBy_jid() {
         SqlSession sqlSession = null;
         sqlSession = MybatisUtils.openSession();
         payrollDao = sqlSession.getMapper(PayrollDao.class);
 
-        System.out.println("1");
         payrollDao.deletePayrollBy_jid("j03");
-        System.out.println("2");
         sqlSession.commit();
          /**
-         * 删除后面要提交事务才能执行
+         * commit删除后面要提交事务才能执行
+         * */
+        MybatisUtils.closeSession(sqlSession);
+    }
+
+    @Test //profession,employe,payroll表删除
+    public void deletePayrollBy_jideid() {
+        SqlSession sqlSession = null;
+        sqlSession = MybatisUtils.openSession();
+        payrollDao = sqlSession.getMapper(PayrollDao.class);
+
+        payrollDao.deletePayrollBy_jideid("j05","e05");
+        sqlSession.commit();
+        /**
+         * commit删除后面要提交事务才能执行
          * */
         MybatisUtils.closeSession(sqlSession);
     }

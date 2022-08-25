@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring_10_annotation_bean" />
+        <module name="spring_44_springMVC" />
         <module name="spring_07_di-autoware" />
         <module name="spring_21_case_interface_run_speed" />
         <module name="Spring_22_aop_advice_data" />
@@ -32,6 +33,7 @@
       <module name="spring_20_aop_advice_type" target="17" />
       <module name="spring_21_case_interface_run_speed" target="17" />
       <module name="Spring_22_aop_advice_data" target="17" />
+      <module name="spring_44_springMVC" target="1.7" />
       <module name="SSM" target="17" />
       <module name="SSM (1)" target="17" />
     </bytecodeTargetLevel>

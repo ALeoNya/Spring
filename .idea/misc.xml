@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/spring_44_springMVC/spring_44_springMVC" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -17,6 +20,7 @@
         <option value="$PROJECT_DIR$/spring_21_case_interface_run_speed/pom.xml" />
         <option value="$PROJECT_DIR$/Spring_22_aop_advice_data/pom.xml" />
         <option value="$PROJECT_DIR$/spring_15_Mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_44_springMVC/spring_44_springMVC/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
